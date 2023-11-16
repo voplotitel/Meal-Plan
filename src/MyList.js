@@ -10,7 +10,7 @@ const MyList = ({mealPlans, addMeal, deleteDay, selectedDay, setSelectedDay}) =>
                 <div className={`meal ${id === selectedDay ? "selected" : "default"}`}
                 onClick={() => setSelectedDay(id)}>
                     <p className="field">{title}</p>
-                    {/* <p className="field">{mealForADay.substring(0, 30)}</p> */}
+                    {<p className="field">{mealForADay.substring(0, 30)}</p>}
                     <p className="field">{mealForADay.length > 30 ? `${mealForADay.substring(0, 30)} ...` : mealForADay}</p>
                     <button className="button-delete" onClick={() => deleteDay(id)}>Delete</button>
                 </div>
